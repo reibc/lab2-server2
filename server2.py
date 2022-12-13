@@ -3,7 +3,7 @@ from fastapi import FastAPI, HTTPException
 import json
 server = FastAPI()
 
-db = connect(host="	clwxydcjair55xn0.chr7pe7iynqr.eu-west-1.rds.amazonaws.com", port=3306, user="lkn7ajxns24zkkwp", password="	jouw6mxkhosaf6e3", db="l9liva98km3vqrba")
+db = connect(host="clwxydcjair55xn0.chr7pe7iynqr.eu-west-1.rds.amazonaws.com", port=3306, user="lkn7ajxns24zkkwp", password="jouw6mxkhosaf6e3", db="l9liva98km3vqrba")
 @server.get('/')
 async def home():
     return {'message':'Welcome!'}
